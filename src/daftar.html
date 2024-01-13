@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" href="../src/output.css">
+    <title>Daftar</title>
+</head>
+<body class="bg-secondary">
+     <!-- header start -->
+     <nav class="flex flex-row max-w-5xl mx-auto justify-between items-center mt-10 pb-3 border-b-4 border-button2">
+        <!-- <svg>GDS ICON</svg> -->
+        <img src="../img/logo.png" alt="" class="w-[70px] h-[70px]">
+
+
+        <ul class="flex flex-row gap-x-7">
+            <li>
+                <a href="landing.html" class="text-base text-black hover:font-semibold hover:text-button2">Beranda</a>
+            </li>
+            <li>
+                <a href="sejarah.html" class="text-base text-black  hover:font-semibold hover:text-button2">Tentang</a>
+            </li>
+            <li>
+                <a href="peraturan.html" class="text-base text-black  hover:font-semibold hover:text-button2">Peraturan</a>
+            </li>
+            <li>
+                <a href="#" class="text-base text-black  hover:font-semibold hover:text-button2">FAQ</a>
+            </li>
+            <li>
+                <a href="persyaratan.html" class="text-base text-black  hover:font-semibold hover:text-button2">Recruitment</a>
+            </li>
+        </ul>
+        <div class="flex flex-row items-center gap-2">
+            <div class="bg-white hover:text-button2 rounded-full flex items-center p-[10px]">
+                <a href="pesan.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+                      </svg>
+                </a>
+            </div>
+
+            <a href="signIn.html" class="bg-button2 text-white text-base hover:bg-button1 py-3 px-6 rounded-full font-semibold">Sign In</a>
+        </div>
+        
+    </nav>
+    <!-- heaer ends -->
+
+    <!-- section daftar start -->
+    <section class="coming max-w-5xl mx-auto pb-5 border-b-4 border-visual">
+        <div class="text-center">
+            <p class="mt-6 text-xl font-semibold text-visual2">School Discipline Movement</p>
+            <h4 class="mt-3 text-4xl font-bold text-button2">GDS Registration Form</h4>
+        </div>
+    </section>
+    <!-- section daftar ends -->
+
+    <!-- section g form start -->
+    <section class="form max-w-2xl mx-auto">
+        <form action="#" method="post" class="form mt-8">
+            <!-- Nama Lengkap -->
+            <div class="NamaLengkap mb-4">
+                <label for="nama" class="text-button2 text-base font-semibold">Nama Lengkap</label>
+                <input class="shadow appearance-none border w-full py-3 px-3 mt-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-xl" id="fullName" type="text">
+            </div>
+
+            <!-- Kelas -->
+            <div class="kelas mb-4">
+                <label for="kelas" class="text-button2 text-base font-semibold">Kelas</label>
+                <input type="text" id="kelas" name="kelas" class="shadow appearance-none border w-full py-3 px-3 mt-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-xl">
+            </div>
+
+            <!-- Asal Sekolah -->
+            <div class="sekolah mb-4">
+                <label for="asalSekolah" class="text-button2 text-base font-semibold">Asal Sekolah</label>
+                <input type="text" id="asalSekolah" name="asalSekolah" class="shadow appearance-none border w-full py-3 px-3 mt-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-xl">
+            </div>
+
+             <!-- No Telpon/WA -->
+             <div class="mb-4">
+                <label for="noTelpon" class="text-button2 text-base font-semibold">No Telpon/WA</label>
+                <input type="text" id="noTelpon" name="noTelpon" class="shadow appearance-none border w-full py-3 px-3 mt-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-xl">
+            </div>
+
+            <!-- Jenis Kelamin -->
+            <div class="gender mb-4">
+                <label class="text-button2 text-base font-semibold">Jenis Kelamin</label>
+                <div class="mt-1">
+                    <label class="inline-flex items-center">
+                        <input type="radio" class="form-radio" name="jenisKelamin" value="Laki-laki">
+                        <span class="ml-2">Laki-laki</span>
+                    </label>
+                    <label class="inline-flex items-center ml-6">
+                        <input type="radio" class="form-radio" name="jenisKelamin" value="Perempuan">
+                        <span class="ml-2">Perempuan</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Tempat Tanggal Lahir -->
+            <div class="ttl mb-4">
+                <label for="ttl" class="text-button2 text-base font-semibold">Tempat Tanggal Lahir</label>
+                <input type="text" id="ttl" name="ttl" class="shadow appearance-none border w-full py-3 px-3 mt-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline rounded-xl">
+            </div>
+
+            <!-- Alasan Masuk Ekstrakulikuler GDS -->
+            <div class="mb-4">
+                <label for="alasan" class="text-button2 text-base font-semibold">Alasan Masuk Ekstrakulikuler GDS</label>
+                <textarea id="alasan" name="alasan" rows="3" class="mt-1 p-2 w-full border rounded-md"></textarea>
+            </div>
+
+            <!-- Tombol Submit -->
+            <div class="mt-6">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md">Submit</button>
+            </div>
+        </form>
+    </section>
+    <!-- section g form ends -->
+
+    <!-- footer start -->
+    <section class="footer w-screen mt-[32px] bg-visual">
+        <div class="max-w-5xl mx-auto py-10">
+            <div>
+                <h5 class="text-primary font-semibold text-base text-center">Copyright © 2024 All rights reserved | This template is made by Youtube | Re-Design by School Discipline Movement</h5>
+            </div>
+        </div>
+    </section>
+    <!-- footer ends -->
+</body>
+</html>
